@@ -48,7 +48,7 @@ contract CryptoDevToken is ERC20, Ownable{
         require(msg.value >= _requiredAmount, "Ether sent is incorrect");
         uint256 amountWithDecimals = amount * 10**18;
         require(
-           (totalSupply() + amountWithDecimals) <= maxTotalSupply, "Exceeds max token supply"
+           (totalSupply() + amountWithDecimals) <= maxTotalSupply, "Exceeds the max token supply"
         );
 
         _mint(msg.sender, amountWithDecimals);
