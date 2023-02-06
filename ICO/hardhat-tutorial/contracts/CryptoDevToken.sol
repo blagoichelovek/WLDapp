@@ -13,7 +13,7 @@ contract CryptoDevToken is ERC20, Ownable{
 
     uint256 public constant tokensPerNFT = 10 * 10**18;
 
-    uint256 public constant maxTokenSupply = 10000 * 10**18;
+    uint256 public constant maxTotalSupply = 10000 * 10**18;
 
     mapping (uint256 => bool) public tokenIdsClaimed;
 
@@ -48,7 +48,7 @@ contract CryptoDevToken is ERC20, Ownable{
         require(msg.value >= _requiredAmount, "Ether sent is incorrect");
         uint256 amountWithDecimals = amount * 10**18;
         require(
-           (totalSupply() + amountWithDecimals) <= maxTokenSupply, "Exceeds max token supply"
+           (totalSupply() + amountWithDecimals) <= maxTotalSupply, "Exceeds max token supply"
         );
 
         _mint(msg.sender, amountWithDecimals);
