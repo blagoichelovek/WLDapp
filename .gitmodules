@@ -1,0 +1,6 @@
+[submodule "FoundryLottery/lib/solmate"]
+	path = FoundryLottery/lib/solmate
+	url = https://github.com/transmissions11/solmate
+[submodule "FoundryLottery/lib/foundry-devops"]
+	path = FoundryLottery/lib/foundry-devops
+	url = https://github.com/ChainAccelOrg/foundry-devops
