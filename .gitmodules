@@ -4,3 +4,9 @@
 [submodule "FoundryLottery/lib/foundry-devops"]
 	path = FoundryLottery/lib/foundry-devops
 	url = https://github.com/ChainAccelOrg/foundry-devops
+[submodule "RealEstate/lib/forge-std"]
+	path = RealEstate/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "MultiSigWallet/lib/forge-std"]
+	path = MultiSigWallet/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
